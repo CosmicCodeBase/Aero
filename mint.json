@@ -15,6 +15,10 @@
     {
       "group": "Get Started",
       "pages": ["introduction", "tools"]
+    },
+    {
+      "group": "picoCTF",
+      "pages": ["picoCTF/ReadMyCert"]
     }
   ],
   "footerSocials": {
