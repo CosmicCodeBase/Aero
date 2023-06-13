@@ -18,5 +18,5 @@ Objective: Analyze and understand the given Certificate Signing Request (CSR) fi
 1. Download the provided [readmycert.csr](https://artifacts.picoctf.net/c/424/readmycert.csr) file.
 2. Open it using `openssl`.
     - `openssl req -text -noout -verify -in readmycert.csr`
-3. Find the flag using `grep` by piping the previous command into grep.
+3. Find the flag using `grep` by piping the previous command into grep with picoCTF's flag format.
     - `openssl req -text -noout -verify -in readmycert.csr | grep picoCTF{`
