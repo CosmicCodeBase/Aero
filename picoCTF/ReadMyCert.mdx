@@ -1,0 +1,22 @@
+---
+title: "ReadMyCert"
+description: "How about we take you on an adventure on exploring certificate signing requests"
+---
+
+| Property              | Description                                                                                                          |
+|-----------------------|----------------------------------------------------------------------------------------------------------------------|
+| CTF name              | picoCTF 2023                                                                                                         |
+| Challenge name        | ReadMyCert         
+| Challenge category    | Cryptography                                                                                                  |
+| Challenge description | How about we take you on an adventure on exploring certificate signing requests. Take a look at this CSR file  here. |
+| Challenge points      | 100                                                                                                                  |
+
+Objective: Analyze and understand the given Certificate Signing Request (CSR) file
+
+### Solution:
+
+1. Download the provided [readmycert.csr](https://artifacts.picoctf.net/c/424/readmycert.csr) file.
+2. Open it using `openssl`.
+    - `openssl req -text -noout -verify -in readmycert.csr`
+3. Find the flag using `grep` by piping the previous command into grep.
+    - `openssl req -text -noout -verify -in readmycert.csr | grep picoCTF{`
